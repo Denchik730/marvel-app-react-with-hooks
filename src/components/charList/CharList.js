@@ -14,7 +14,7 @@ const CharList = (props) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [newCharLoading, setNewCharLoading] = useState(false);
-  const [offset, setOffset] = useState(600);
+  const [offset, setOffset] = useState(210);
   const [charEnded, setCharEnded] = useState(false);
 
   const marvelService = new MarvelService();
@@ -65,6 +65,7 @@ const CharList = (props) => {
 
   function renderItems(arr) {
     const items = arr.map((item, i) => {
+
       let imgStyle = {'objectFit' : 'cover'};
       if (item.thumbnail === 'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg') {
         imgStyle = {'objectFit' : 'unset'};

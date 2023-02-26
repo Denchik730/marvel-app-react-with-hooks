@@ -17,7 +17,7 @@ const CharInfo = (props) => {
   const marvelService = new MarvelService();
 
   useEffect(() => {
-    updateChar()
+    updateChar();
   }, [props.charId])
 
   const updateChar = () => {
@@ -25,7 +25,9 @@ const CharInfo = (props) => {
     if (!charId) {
       return;
     }
+
     onCharLoading();
+
     marvelService.getCharacter(charId)
       .then(onCharLoaded)
       .catch(onError)
@@ -91,13 +93,15 @@ const View = ({char}) => {
       <ul className="char__comics-list">
         {comics.length > 0 ? null : 'There is no comics with this character'}
         {
-          comics.map((item, i) => {
-            if (i > 9) return;
-            return (
-              <li key={i} className="char__comics-item">
-                {item.name}
-              </li>
-            )
+          comics.map((item) => {
+            for (let i = 0; i < comics.length; i++) {
+              if (i === 9) break;
+              return (
+                <li key={+item.resourceURI.slice(43)} className="char__comics-item">
+                  {item.name}
+                </li>
+              );
+            }
           })
         }                
       </ul>
