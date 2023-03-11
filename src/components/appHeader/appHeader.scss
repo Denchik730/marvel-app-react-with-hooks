@@ -21,6 +21,13 @@
     }
     &-link {
     margin: 0 8px;
+    color: $main-color;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+    &-list-item {
       &:hover {
         color: $main-color;
       }
