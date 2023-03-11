@@ -66,7 +66,7 @@ const ComicsList = () => {
   const spinner = loading && !newItemLoading ? <Spinner/> : null;
 
   return (
-    <div className="char__list">
+    <div className="comics__list">
       {errorMessage}
       {spinner}
       {items}
