@@ -20,7 +20,6 @@
       line-height: 32px;
     }
     &-link {
-    margin: 0 8px;
     color: $main-color;
 
       &:hover {
@@ -28,6 +27,8 @@
       }
     }
     &-list-item {
+      margin: 0 8px;
+
       &:hover {
         color: $main-color;
       }

@@ -12,9 +12,9 @@ const AppHeader = () => {
       </h1>
       <nav className="header__menu">
         <ul className="header__menu-links">
-          <li className="header__menu-list-item"><NavLink exact activeClassName="header__menu-link" to="/">Characters</NavLink></li>
+          <li className="header__menu-list-item"><NavLink end className={({isActive}) => '' + (isActive ? "header__menu-link" : "")} to="/">Characters</NavLink></li>
           /
-          <li className="header__menu-list-item"><NavLink exact activeClassName="header__menu-link" to="/comics">Comics</NavLink></li>
+          <li className="header__menu-list-item"><NavLink end className={({isActive}) => '' + (isActive ? "header__menu-link" : "")} to="/comics">Comics</NavLink></li>
         </ul> 
       </nav>
     </header>
