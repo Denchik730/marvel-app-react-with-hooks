@@ -28,6 +28,7 @@
 - PropTypes
 - Ref
 - React-router
+- Динамические инпорты React.lazy
 
 ## Инструкция по использованию:
 
