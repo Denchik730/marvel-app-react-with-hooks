@@ -1,6 +1,8 @@
 # Проект: Marvel (hooks) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 ---
+## Превью:
+![www_screencapture_com_2023-3-29_15_38 (1)](https://user-images.githubusercontent.com/102176847/228538429-1b00adde-639f-4144-ad9a-2c057b440eba.gif)
 
 ## Описание: данный проект решает такие проблемы как:
 
